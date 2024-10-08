@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      #one,
+      #two,
+      #three,
+      #four,
+      #five,
+      #six,
+      #seven,
+      #eight,
+      #nine,
+      #ten,
+      #eleven,
+      #twelve {
+        display: flex;
+        width: 270px;
+        height: 270px;
+      }
+      img {
+        transition: scale 0.2s;
+        transition-timing-function: ease-in-out;
+        -webkit-filter: drop-shadow(0px 0px 4px rgba(255, 255, 255, 0.8));
+      }
+      img:hover {
+        scale: 110%;
+        -webkit-filter: drop-shadow(0 0 10px #fffb00);
+      }
+
+      #parent {
+        display: flex;
+        justify-content: flex-start;
+        gap: 100px;
+        flex-wrap: wrap;
+        margin-top: 50px;
+        margin-left: 70px;
+      }
+
+      @media screen and (max-width: 400px) {
+        #one,
+        #two,
+        #three,
+        #four,
+        #five,
+        #six,
+        #seven,
+        #eight,
+        #nine,
+        #ten,
+        #eleven,
+        #twelve {
+          flex: 100%;
+          justify-content: center;
+        }
+        #parent{
+            margin-left: 0px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="parent">
+      <div id="one">
+        <img src="img/goblin.png" alt="goblin" />
+      </div>
+      <div id="two">
+        <img  src="img/barbarian.png" alt="goblin" />
+      </div>
+      <div id="three">
+        <img src="img/gaint.png" alt="goblin" />
+      </div>
+      <div id="four">
+        <img src="img/wizard.png" alt="goblin" />
+      </div>
+      <div id="five">
+        <img src="img/valkyrie.png" alt="goblin" />
+      </div>
+      <div id="six">
+        <img  src="img/golem.png" alt="goblin" />
+      </div>
+      <div id="seven">
+        <img src="img/hogrider.png" alt="goblin" />
+      </div>
+      <div id="eight">
+        <img src="img/pekka.png" alt="goblin" />
+      </div>
+      <div id="nine">
+        <img src="img/archer.png" alt="goblin" />
+      </div>
+      <div id="ten">
+        <img src="img/dargon.png" alt="goblin" />
+      </div>
+      <div id="eleven">
+        <img src="img/skeleton.png" alt="goblin" />
+      </div>
+      <div id="twelve">
+        <img src="img/balloon.png" alt="goblin" />
+      </div>
+    </div>
+  </body>
+</html>
